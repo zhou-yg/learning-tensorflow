@@ -1,12 +1,16 @@
-# TensorFlow.js Example: Addition RNN
+# learning tensorflow
 
-This example uses an RNN to compute the addition of two integers by doing
-string => string translation. Obviously it's not the best way to add two
-numbers, but it makes a fun example.
+javascript学习路线
 
-Note: this example is a port of the Keras addition RNN example with a UI.
+## 目标
 
-You can find the original Keras python code [here](https://github.com/keras-team/keras/blob/master/examples/addition_rnn.py).
+> 基于tensorflow的自动聊天机器人
 
-[See this example live!](https://storage.googleapis.com/tfjs-examples/addition-rnn/dist/index.html)
-# learning-tensorflow
+## 大纲
+
+ - chaper0 起步
+   - [ ] tfjs "hello world"
+   - [ ] tfjs api入门
+   - [ ] tfjs demo 学习
+     - [ ] google小恐龙游戏
+     - [ ] tfjs 线性模型
