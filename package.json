@@ -1,0 +1,24 @@
+{
+  "name": "learning-tensorflow",
+  "version": "1.0.0",
+  "description": "javascript学习路线",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhou-yg/learning-tensorflow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhou-yg/learning-tensorflow/issues"
+  },
+  "homepage": "https://github.com/zhou-yg/learning-tensorflow#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.12.5",
+    "tf": "^1.0.1",
+    "tfjs": "^0.6.0"
+  }
+}
