@@ -8,11 +8,12 @@ javascript学习路线，数据资料来自各个网络
 
 ## 文件目录
 
-- chapter0/ 章节一
-- data/ 训练数据源
-  - documents.md 相关资料出处
-  - mnint/ 手写数字的数据源
-  - t-rex-run/ google小恐龙游戏代码
+- learning-tensorflow/
+  - chapter0/ 章节一
+  - data/ 训练数据源
+    - documents.md 相关资料出处
+    - mnint/ 手写数字的数据源
+    - t-rex-run/ google小恐龙游戏代码
 
 ## 大纲
 
