@@ -16,7 +16,15 @@ s5.sub(s7).square().mean().print()
 tf.sigmoid(s5).print();
 
 
-const d2 = tf.tensor2d([1, 2, 3 ,4 ], [2, 2]);
-const w = tf.scalar(5);
-tf.tensor2d([0.5, 0.5], [2, 1]).print()
-d2.mul(tf.scalar(2)).matMul(tf.tensor2d([0.5, 0.5], [2, 1])).print()
+const d1 = tf.tensor2d([[0, 1, 2]]);
+const d2 = tf.tensor2d([[tf.scalar(0),1,2],[2,3,4]]);
+
+d2.print();
+
+const w = tf.ones([3, 1]);
+
+w.print();
+d1.matMul(w).print();
+d2.matMul(w).add(tf.scalar(2)).print();
+
+tf.randomNormal([2, 6]).print();
