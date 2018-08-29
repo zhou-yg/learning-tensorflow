@@ -21,3 +21,4 @@ ssr/
 !README.md
 app/package-lock.json
 app/t.js
+.cache

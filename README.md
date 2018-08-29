@@ -18,7 +18,7 @@ javascript学习路线，数据资料来自各个网络
 ## 大纲
 
  - chapter0 example
-   - google小恐龙游戏实践
+   - [ ] google小恐龙游戏实践
  - chapter1 起步
    - [x] tfjs "hello world"
    - [ ] tfjs api入门

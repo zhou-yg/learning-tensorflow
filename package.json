@@ -18,7 +18,15 @@
   "homepage": "https://github.com/zhou-yg/learning-tensorflow#readme",
   "dependencies": {
     "@tensorflow/tfjs": "^0.12.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-1": "^6.24.1",
     "tf": "^1.0.1",
     "tfjs": "^0.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "less": "^3.8.1"
   }
 }

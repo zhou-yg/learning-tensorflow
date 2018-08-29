@@ -1,65 +1,22 @@
 const tf = require('@tensorflow/tfjs')
 
-const s5 = tf.scalar(5);
+const s5 = tf.tensor1d([5, 2]);
+const s7 = tf.tensor1d([7, 3]);
 
 console.log(s5);
 
-s5.print();
-console.log('====');
-const v1 = tf.tensor1d([0, 1, 2]);
-console.log(v1);
+const v = tf.variable(s5);
 
-v1.print();
+console.log(v);
 
 
-tf.ones([3, 5]).print();
+s5.sub(s7).square().mean().print()
+// console.log(s5.sub(s7).square().mean().print())
 
-const z = tf.zeros([2, 3]);
-z.print();
-
-const zvalue = tf.variable(z);
-
-zvalue.print();
-
-const d2 = tf.tensor2d([[1,2,3], [4,5,6]]);
-
-zvalue.assign(d2)
-
-d2.square();
-
-zvalue.print();
+tf.sigmoid(s5).print();
 
 
-
-const e = tf.tensor2d([[1.0, 2.0], [3.0, 4.0]]);
-const f = tf.tensor2d([[5.0, 6.0], [7.0, 8.0]]);
-
-const e_plus_f = e.add(f);
-e_plus_f.print();
-
-
-const x = tf.tensor1d([0, -1, 2, -3]);
-
-x.sigmoid().print();  // or tf.sigmoid(x)
-
-console.log(`sigmoid:`, tf.sigmoid(x).then);
-
-const r =tf.tidy(() => {
-  return tf.sigmoid(x);
-});
-
-console.log(`r:`);
-
-console.log('====')
-
-const buffer = tf.buffer([2, 2], 'bool');
-buffer.set(3, 0, 0);
-buffer.set(5, 1, 0);
-
-// Convert the buffer back to a tensor.
-buffer.toTensor().print();
-console.log(buffer);
-
-//
-console.log('====');
-tf.truncatedNormal([2, 2]).print();
+const d2 = tf.tensor2d([1, 2, 3 ,4 ], [2, 2]);
+const w = tf.scalar(5);
+tf.tensor2d([0.5, 0.5], [2, 1]).print()
+d2.mul(tf.scalar(2)).matMul(tf.tensor2d([0.5, 0.5], [2, 1])).print()

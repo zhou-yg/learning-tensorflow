@@ -419,9 +419,9 @@ export default class Runner {
     // Reset the time clock.
     this.time = getTimeStamp();
 
-    setTimeout(() => {
-      this.restart();
-    }, 500);
+    // setTimeout(() => {
+    //   this.restart();
+    // }, 500);
   }
 
   stop() {
